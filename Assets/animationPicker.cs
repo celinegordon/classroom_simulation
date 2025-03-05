@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class animationPicker : MonoBehaviour
 {
-    [SerializeField] int NumAnimations = 7;
+    [SerializeField] int NumAnimations = 0; //will get overwritten!!!!!!!!!!!
     //create a reference to a component of type Animator
     Animator animator; //varaible name and then the type
     
@@ -11,6 +11,7 @@ public class animationPicker : MonoBehaviour
     {
         animator = GetComponent<Animator>(); //get me a refernece to a component of type animator to the current game object
         InvokeRepeating("ChangeAnimationIndex", 0, 5);
+        ChangeAnimationIndex();
 
     }
 
