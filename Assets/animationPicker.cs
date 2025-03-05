@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class animationPicker : MonoBehaviour
 {
-    [SerializeField] int NumAnimations = 0;
+    [SerializeField] int NumAnimations = 7;
     //create a reference to a component of type Animator
     Animator animator; //varaible name and then the type
     
