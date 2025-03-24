@@ -24,4 +24,8 @@ public class animationPicker : MonoBehaviour
     void ChangeAnimationIndex(){
         animator.SetInteger("index", Random.Range(0, NumAnimations));
     }
+
+    public void HandRaiser1(){
+        animator.SetTrigger("RaiseHand");
+    }
 }
